@@ -1,0 +1,37 @@
+{
+    "name": "process-cursor-concurrently",
+    "version": "1.0.0",
+    "description": "Iterate a Mongodb cursor and handle results concurrently, up to a set limit",
+    "main": "index.js",
+    "scripts": {
+        "test": "xo && ava && tsd"
+    },
+    "keywords": [
+        "concurrency",
+        "cursor",
+        "async",
+        "parallel",
+        "process",
+        "mongo",
+        "mongodb"
+    ],
+    "author": "Daniel Lupu <dflupu@gmail.com>",
+    "repository": "https://github.com/dflupu/process-cursor-concurrently",
+    "license": "MIT",
+    "dependencies": {
+        "@types/mongodb": "^3.5.18"
+    },
+    "devDependencies": {
+        "ava": "^3.8.2",
+        "mongodb": "^3.5.8",
+        "mongodb-memory-server": "^6.6.1",
+        "tsd": "^0.11.0"
+    },
+    "xo": {
+        "space": 4,
+        "semicolon": false,
+        "rules": {
+            "no-await-in-loop": 0
+        }
+    }
+}
